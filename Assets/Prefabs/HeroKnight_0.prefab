@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9130260625246285188}
   - component: {fileID: 8747096878621663373}
   - component: {fileID: 4575118506981194989}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: HeroKnight_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

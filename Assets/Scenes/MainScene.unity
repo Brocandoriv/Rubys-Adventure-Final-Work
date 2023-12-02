@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 589641486}
   - component: {fileID: 589641485}
   - component: {fileID: 589641484}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SoundTrigger 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11762,7 +11762,7 @@ GameObject:
   - component: {fileID: 2138489566}
   - component: {fileID: 2138489565}
   - component: {fileID: 2138489564}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: SoundTrigger 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8098717775522317941}
   - component: {fileID: 7572779966598341704}
   - component: {fileID: 117116438924996525}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LightBandit_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
