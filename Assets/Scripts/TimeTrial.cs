@@ -35,7 +35,7 @@ public class TimeTrial : MonoBehaviour
         {
             //Update Text
             TimeTrialText.text = "Time Left: " +  timeRemaining.ToString();
-            Debug.Log(timeRemaining.ToString());
+            //Debug.Log(timeRemaining.ToString());
             Invoke("_tick", 1f);
         }
         else
@@ -46,7 +46,7 @@ public class TimeTrial : MonoBehaviour
     }
     public void stopTimer()
     {
-        Debug.Log("Timer Stopped");
+        //Debug.Log("Timer Stopped");
         isCountingDown=false;
     }
 }
