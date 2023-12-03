@@ -41,7 +41,7 @@ public class GameOver : MonoBehaviour
     }
     public void winGame()
     {
-        Debug.Log("Win Game");
+        //Debug.Log("Win Game");
         TimeTrial.instance.stopTimer();
         PlaySound(winSound);
         gameOverText.text = "You win! Game created by Group 23. Press R to restart";
@@ -50,7 +50,7 @@ public class GameOver : MonoBehaviour
     }
     public void loseGame()
     {
-        Debug.Log("Lose Game");
+        //Debug.Log("Lose Game");
         TimeTrial.instance.stopTimer();
         PlaySound(loseSound);
         gameOverText.text = "You lose! Game created by Group 23. Press R to restart";

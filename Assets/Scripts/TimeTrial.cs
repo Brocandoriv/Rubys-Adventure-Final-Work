@@ -10,6 +10,7 @@ public class TimeTrial : MonoBehaviour
     public int timeRemaining;
     public bool isCountingDown = false;
     public TMP_Text TimeTrialText;
+    public int debugValue = 0;
     void Awake()
     {
         instance = this;
@@ -30,18 +31,24 @@ public class TimeTrial : MonoBehaviour
 
     private void _tick()
     {
-        timeRemaining--;
-        if (timeRemaining > 0 &&isCountingDown==true)
-        {
-            //Update Text
-            TimeTrialText.text = "Time Left: " +  timeRemaining.ToString();
-            //Debug.Log(timeRemaining.ToString());
-            Invoke("_tick", 1f);
-        }
-        else
-        {
-            GameOver.instance.loseGame();
-            isCountingDown = false;
+            timeRemaining--;
+            if (timeRemaining > 0 && isCountingDown == true && debugValue == 0)
+            {
+                //Update Text
+                TimeTrialText.text = "Time Left: " + timeRemaining.ToString();
+                Debug.Log(timeRemaining.ToString());
+                Invoke("_tick", 1f);
+            }
+            else if (timeRemaining > 0 && isCountingDown == false && debugValue == 0)
+            {
+                GameOver.instance.winGame();
+                debugValue++;
+                
+            }
+            else
+            {
+                GameOver.instance.loseGame();
+                isCountingDown = false;
         }
     }
     public void stopTimer()
